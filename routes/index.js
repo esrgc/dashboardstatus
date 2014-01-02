@@ -7,4 +7,4 @@ exports.index = function(req, res){
       dashboards: dashboards
     })
   })
-};
+}
