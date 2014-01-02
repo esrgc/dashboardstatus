@@ -57,4 +57,4 @@ DashboardTester.run = function(next){
   })
 }
 
-exports.DashboardTester = DashboardTester;
+exports.DashboardTester = DashboardTester
