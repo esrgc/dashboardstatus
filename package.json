@@ -1,0 +1,14 @@
+{
+  "name": "DashboardStatusServer",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node DashboardStatusServer"
+  },
+  "dependencies": {
+    "express": "3.1.0",
+    "ejs": "*",
+    "request": "~2.30.0",
+    "async": "~0.2.9"
+  }
+}

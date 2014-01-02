@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboards | Status</title>
+  <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Dashboard Status</h1>
+
+    <% dashboards.forEach(function(dashboard){ %>
+      <h4><%= dashboard.name %></h4>
+      <div>
+        Home page: <a href="<%= dashboard.url %>"><%= dashboard.url %></a>
+      </div>
+      <div>
+        API Test: <a href="<%= dashboard.api %>">api url</a>
+      </div>
+      <div class="responseType">
+        API Response Type: 
+        <span class="<%= dashboard.responseType %>">
+          <%= dashboard.statusCode %>
+          <%= dashboard.responseType %>
+        </span>
+      </div>
+      <div class="responseTime">
+        API Response Time: <%= dashboard.responseTime %> ms
+      </div>
+    <% }) %>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
