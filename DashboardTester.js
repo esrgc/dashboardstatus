@@ -10,19 +10,19 @@ DashboardTester.dashboards = [
     , 'api': 'http://www.esrgc.org/dashboards/dllr/api/Work/JobsByRegion?areatype=01&areacode=000000'
   }
   , {
-    'name': 'DBED Data Explorer'
+    'name': 'DBED Data Explorer (Socrata)'
     , 'url': 'http://apps.esrgc.org/dashboards/countycomparison'
     , 'api': 'http://apps.esrgc.org/dashboards/countycomparison/api/stats?criteria_codes%5B%5D=13417934&compare=counties'
   }
   , {
-    'name': 'BayStat Causes'
+    'name': 'BayStat Causes (Socrata)'
     , 'url': 'http://apps.esrgc.org/dashboards/baystat/causes.html'
     , 'api': 'https://data.maryland.gov/resource/rsrj-4w3t.json'
   }
   , {
-    'name': 'BayStat Solutions'
+    'name': 'BayStat Solutions (Socrata)'
     , 'url': 'http://apps.esrgc.org/dashboards/baystat/solutions.html'
-    , 'api': 'https://data.maryland.gov/resource/8nvv-y5u6.json'
+    , 'api': 'https://data.maryland.gov/resource/4zqs-i2t2.json'
   }
   , {
     'name': 'Caroline DES'
