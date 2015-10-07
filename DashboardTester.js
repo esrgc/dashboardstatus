@@ -25,7 +25,7 @@ DashboardTester.dashboards = [{
     'api': 'http://apps.esrgc.org/dashboards/countycomparison/api/stats?criteria_codes%5B%5D=13417934&compare=counties'
   }, {
     'name': 'DHCD Dashboard (Socrata)',
-    'url': 'http://apps.esrgc.org/dashboards/dhcd/dashboard',
+    'url': 'http://apps.esrgc.org/dashboards/dhcd',
     'api': 'https://data.maryland.gov/resource/7gad-cuav.json'
   }, {
     'name': 'MEA Dashboard',
