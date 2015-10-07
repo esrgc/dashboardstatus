@@ -4,14 +4,6 @@ var request = require('request'),
 var DashboardTester = {}
 
 DashboardTester.dashboards = [{
-    'name': 'DLLR Dashboard',
-    'url': 'http://www.esrgc.org/dashboards/dllr',
-    'api': 'http://www.esrgc.org/dashboards/dllr/api/Work/JobsByRegion?areatype=01&areacode=000000'
-  }, {
-    'name': 'DBED Data Explorer (Socrata)',
-    'url': 'http://apps.esrgc.org/dashboards/countycomparison',
-    'api': 'http://apps.esrgc.org/dashboards/countycomparison/api/stats?criteria_codes%5B%5D=13417934&compare=counties'
-  }, {
     'name': 'BayStat Causes (Socrata)',
     'url': 'http://apps.esrgc.org/dashboards/baystat/causes.html',
     'api': 'https://data.maryland.gov/resource/rsrj-4w3t.json'
@@ -24,11 +16,30 @@ DashboardTester.dashboards = [{
     'url': 'http://apps.esrgc.org/dashboards/carolinedes/',
     'api': 'http://apps.esrgc.org/dashboards/carolinedes/api/allcalls?filters%5B0%5D%5Btype%5D=limit&filters%5B0%5D%5Bvalue%5D=10&filters%5B0%5D%5Bactive%5D=true&filters%5B0%5D%5Bconstant%5D=true&filters%5B1%5D%5Btype%5D=offset&filters%5B1%5D%5Bvalue%5D=0&filters%5B1%5D%5Bactive%5D=true&filters%5B1%5D%5Bconstant%5D=true'
   }, {
-    'name' : 'DHCD Dashboard (Socrata)',
+    'name': 'DLLR Dashboard',
+    'url': 'http://www.esrgc.org/dashboards/dllr',
+    'api': 'http://www.esrgc.org/dashboards/dllr/api/Work/JobsByRegion?areatype=01&areacode=000000'
+  }, {
+    'name': 'DBED Data Explorer (Socrata)',
+    'url': 'http://apps.esrgc.org/dashboards/countycomparison',
+    'api': 'http://apps.esrgc.org/dashboards/countycomparison/api/stats?criteria_codes%5B%5D=13417934&compare=counties'
+  }, {
+    'name': 'DHCD Dashboard (Socrata)',
     'url': 'http://apps.esrgc.org/dashboards/dhcd/dashboard',
     'api': 'https://data.maryland.gov/resource/7gad-cuav.json'
+  }, {
+    'name': 'MEA Dashboard',
+    'url': 'http://apps.esrgc.org/dashboards/smartenergy/',
+    'api': 'http://apps.esrgc.org/dashboards/smartenergy/api/getPoints?tab=renewable&geotype=county'
+  }, {
+    'name': 'Oklahoma Dashboard',
+    'url': 'http://esrgc.org/dashboards/okdashboard/home/index',
+    'api': 'http://www.esrgc.org/dashboards/okdashboard/training/charts/2'
+  }, {
+    'name': 'Shore Transit Dashboard',
+    'url': 'http://apps.esrgc.org/dashboards/shoretransit',
+    'api': 'http://apps.esrgc.org/dashboards/shoretransit/api/getRoutes'
   }
-
 ]
 
 DashboardTester.test = function(dashboard, callback) {
